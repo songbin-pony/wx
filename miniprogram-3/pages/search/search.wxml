@@ -1,0 +1,20 @@
+<!--pages/search/search.wxml-->
+<view class="search_top center">
+  <text>请输入地址</text>
+</view>
+<!-- 搜索框 -->
+<view class="search_box">
+  <view class="search_from_des">
+  <input placeholder="点击查找火车站" bindinput="bindinput" class="search_input"></input>
+  </view>
+  <view class="search_button">
+  <button size="mini" bindgetuserinfo="getaddr" type="primary">搜索</button>
+  </view>
+
+</view>
+<!-- 搜索结果 -->
+<view class="search_result" wx:for="{{station_list}}" wx:key="_id">
+<button class="search_button_list" size="default" bindtap="search_button_list_Click" id="{{item.station}}">
+{{item.station}}
+</button>
+</view>

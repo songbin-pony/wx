@@ -1,0 +1,29 @@
+/* pages/search/search.wxss */
+/* 请输入地址 */
+.search_top{
+  height: 60rpx;
+}
+/* 搜索框 */
+.search_box{
+  height: 100rpx;
+  background-color: #fff;
+  position: relative;
+}
+.search_from_des{
+  background-color: #ccc;
+  height: 60rpx;
+  border-radius: 3%;
+  width: 70%;
+  top: 20rpx;
+  left: 20rpx;
+  position: absolute;
+}
+.search_button{
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+}
+.search_input{
+  margin-left: 10rpx;
+  margin-top: 5rpx;
+}

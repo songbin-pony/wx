@@ -1,0 +1,37 @@
+/* pages/municipal_scenery_list/municipal_scenery_list.wxss */
+.pageheader{
+  height: 50rpx;
+}
+.info_box{
+  height: 200rpx;
+  display: flex;
+  margin: 10rpx;
+
+}
+.info_box .img{
+  height: 100%;
+  width: 40%;
+  overflow: hidden;
+
+}
+image{
+  width: 100%;
+}
+.info_title{
+  width: 15%;
+  padding-left: 10rpx;
+}
+.scenery_addr{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.scenery_name{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.info_content{
+  width: 35%;
+  padding-left: 10rpx;
+}

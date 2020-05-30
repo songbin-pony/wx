@@ -1,0 +1,21 @@
+<!--pages/train_list/train_list.wxml-->
+<view class="train_list_header center">
+<text>车次信息</text>
+</view>
+<!-- 车次信息 -->
+<view class="train_info_item" wx:for="{{train_list}}" wx:key="buttonTextInfo" bindtap="train_info_detail_click" id="{{item.queryLeftNewDTO.train_no}}">
+<view class="train_info_item_right">列车号:</view>
+<view class="train_info_item_right">{{item.queryLeftNewDTO.train_no}}</view>
+<view class="train_info_item_right">开始站:</view>
+<view class="train_info_item_right">{{item.queryLeftNewDTO.start_station_name}}</view>
+<view class="train_info_item_right">终点站:</view>
+<view class="train_info_item_right">{{item.queryLeftNewDTO.end_station_name}}</view>
+<view class="train_info_item_right">开始时间:</view>
+<view class="train_info_item_right">{{item.queryLeftNewDTO.start_time}}</view>
+<view class="train_info_item_right">到达时间:</view>
+<view class="train_info_item_right">{{item.queryLeftNewDTO.arrive_time}}</view>
+<view class="train_info_item_right">时长:</view>
+<view class="train_info_item_right">{{item.queryLeftNewDTO.lishi}}</view>
+<view class="train_info_item_right">列车出发日期:</view>
+<view class="train_info_item_right">{{item.queryLeftNewDTO.start_train_date}}</view>
+</view>

@@ -1,0 +1,34 @@
+<!--pages/train_info_detail/train_info_detail.wxml-->
+<view class="train_info_detail_header center">车次详细信息</view>
+<view class="train_info_box">
+<!-- 列车信息栏 -->
+<view class="box_left">
+<view>列车号:</view>
+<view>开始站:</view>
+<view>终点站:</view>
+<view>开始时间:</view>
+<view>时长:</view>
+<view>列车出发日期:</view>
+</view>
+<view class="box_right">
+<view>{{train_list_selected.train_no}}</view>
+<view>{{train_list_selected.start_station_name}}</view>
+<view>{{train_list_selected.end_station_name}}</view>
+<view>{{train_list_selected.start_time}}</view>
+<view>{{train_list_selected.arrive_time}}</view>
+<view>{{train_list_selected.start_train_date}}</view>
+</view>
+</view>
+<!-- 添加购票数量 -->
+<view class="buy_num">
+<view class="buy_title_text center">购票数量</view>
+<view wx:if="{{ticket_num==1}}"><image src="/pages/img/icon/dark_sub.png" class="img_add_sub" mode="widthFix"></image></view>
+<view bindtap="subtract_Ticket" wx:else><image src="/pages/img/icon/white_sub.png" class="img_add_sub" mode="widthFix"></image></view>
+<text class="num_text center">{{ticket_num}}</text>
+<view wx:if="{{ticket_num==5}}"><image src="/pages/img/icon/dark_add.png" class="img_add_sub" mode="widthFix"></image></view>
+<view bindtap="add_Ticket" wx:else><image src="/pages/img/icon/white_add.png" class="img_add_sub" mode="widthFix"></image></view>
+</view>
+<!-- 加入购票车 -->
+<view>
+<button bindtap="add_to_shopcar" class="train_info_btn" size="default">加入购票车</button>
+</view>

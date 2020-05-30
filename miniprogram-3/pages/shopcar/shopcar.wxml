@@ -1,0 +1,48 @@
+<!--pages/shopcar/shopcar.wxml-->
+<!-- 已经登陆 -->
+<view>
+<view class="header_fixed">
+<view class="shopcar_header"><view>我的购票车</view>
+<view wx:if="{{manage_or_complish=='manage'}}" bindtap="Manage">管理</view>
+<view wx:else bindtap="Complish">完成</view>
+</view>
+</view>
+<view class="for_top_fixed"></view>
+<view class="shopcar_info_box" wx:for="{{ticket_list}}"wx:key="train_no">
+<view class="img_icon_vertical_center" bindtap="select_one" id="{{item.add_time}}">
+<image src="/pages/img/icon/unchecked.png" class="img_icon" mode="widthFix" wx:if="{{item.index==0}}"></image>
+<image src="/pages/img/icon/checked.png" class="img_icon" mode="widthFix" wx:else></image>
+</view>
+<!-- 列车信息栏 -->
+<view class="box_left">
+<view>列车号:</view>
+<view>开始站:</view>
+<view>终点站:</view>
+<view>开始时间:</view>
+<view>时长:</view>
+<view>列车出发日期:</view>
+<view>数量:</view>
+</view>
+<view class="box_right">
+<view>{{item.train_no}}</view>
+<view>{{item.start_station_name}}</view>
+<view>{{item.end_station_name}}</view>
+<view>{{item.start_time}}</view>
+<view>{{item.arrive_time}}</view>
+<view>{{item.start_train_date}}</view>
+<view>{{item.ticket_num}}</view>
+</view>
+</view>
+</view>
+<!-- 结算以及删除 -->
+<view class="del_or_pay">
+<!-- 左边 -->
+<view class="select_all" bindtap="Select_All">
+<image src="/pages/img/icon/select_all.png" class="jiesuan_del_img" mode="widthFix" wx:if="{{select_all==false}}"></image>
+<image src="/pages/img/icon/concel_select_all.png" class="select_all_img" mode="widthFix" wx:else></image>
+</view>
+<!-- 右边 -->
+<view wx:if="{{pay_or_del=='pay'}}"><image src="/pages/img/icon/pay.png" class="jiesuan_del_img" mode="widthFix" bindtap="pay_money"></image></view>
+<view wx:else><image src="/pages/img/icon/del.png" class="jiesuan_del_img" mode="widthFix" bindtap="del_commodity"></image></view>
+</view>
+<!-- 还未登陆 -->

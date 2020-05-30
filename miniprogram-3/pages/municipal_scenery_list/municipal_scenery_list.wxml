@@ -1,0 +1,22 @@
+<!--pages/municipal_scenery_list/municipal_scenery_list.wxml-->
+<view class="pageheader center">{{municipal_name}}</view>
+<view class="info_box" wx:for="{{municipal_scenery_list}}">
+<!-- 图片 -->
+<view class="img">
+<image src="{{item.small_image_link}}" mode="widthFix"></image>
+</view>
+<!-- 信息标题 -->
+<view class="info_title">
+<view>名称:</view>
+<view>排名:</view>
+<view>评分:</view>
+<view>地址:</view>
+</view>
+<!-- 信息标题对应的值 -->
+<view class="info_content">
+<view class="scenery_name">{{item.name}}</view>
+<view>第{{item.rank}}名</view>
+<view>{{item.score}}分</view>
+<view class="scenery_addr">{{item.addr}}</view>
+</view>
+</view>

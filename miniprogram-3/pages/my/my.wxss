@@ -1,0 +1,19 @@
+/* pages/my/my.wxss */
+.my-headphoto{
+  height: 400rpx;
+  background-color: rgb(177, 238, 235);
+
+}
+.my-headphoto image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 100%;
+  border: 10rpx solid rgba(76, 233, 181, 0.5);
+}
+.my-headphoto .my_login{
+  background-color: aliceblue;
+  width: 50%;
+  height: 100rpx;
+  border-radius: 5%;
+
+}

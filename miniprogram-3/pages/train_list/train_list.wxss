@@ -1,0 +1,17 @@
+/* pages/train_list/train_list.wxss */
+.train_list_header{
+  height: 80rpx;
+  background-color: #fff;
+  font-size: 20px;
+}
+.train_info_item{
+  padding: 20rpx;
+  margin: 20rpx;
+  background-color: #ccc;
+  border-radius: 5%;
+  display: flex;
+  flex-wrap: wrap
+}
+.train_info_item_right{
+  width: 50%;
+}

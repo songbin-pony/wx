@@ -1,0 +1,44 @@
+/* pages/scan_code/scan_code.wxss */
+.link{
+  display: flex;
+  flex-wrap: wrap;
+  height: 200rpx;
+  padding: 10rpx;
+  background-color:white;
+  border: 1px solid #ccc;
+}
+.link_action{
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.link_text_1{
+  font-family: "Microsoft soft";
+  height: 60rpx;
+}
+.link_text_2{
+  font-family: "Microsoft soft";
+  height: 60rpx;
+   background-color:aliceblue;
+  border-radius: 5%;
+  border: 1px solid #ccc;
+}
+.url{
+  width: 75%;
+  margin-left: 20rpx;
+  padding: 6rpx;
+  word-break: break-all;
+  box-sizing: border-box;
+}
+.code_space{
+  margin-top: 30rpx;
+}
+.code_text{
+  font-size: 20px;
+  font-family: "Microsoft soft";
+  font-weight: bold;
+  margin-bottom: 40rpx;
+  text-align: center;
+
+}

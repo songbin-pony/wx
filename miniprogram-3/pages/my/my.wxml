@@ -1,0 +1,31 @@
+<!--pages/my/my.wxml-->
+<!-- 头像 -->
+<view class="my-headphoto column_center" wx:if="{{my_whether_login}}">
+<image src="../img/others/headphoto.jpg"></image>
+  <text>{{my_name}}</text>
+</view>
+<view class="my-headphoto center" wx:else>
+  <navigator class="my_login center" url="/pages/login/login">
+    <text>未登录，请点击登陆</text>
+  </navigator>
+</view>
+<!-- 一横 -->
+<view class="divider10"></view>
+<view class="row70">
+  <text class="arrow" bindtap="unpaid_order">未支付订单</text>
+</view>
+<view class="row70">
+  <text class="arrow" bindtap="paid_order">已经支付订单</text>
+</view>
+<view class="row70">
+  <text class="arrow" bindtap="need_refund">待退款订单</text>
+</view>
+<view class="row70">
+  <text class="arrow" bindtap="refunded">已退款订单</text>
+</view>
+<!-- 一横 -->
+<view class="divider20"></view>
+<view class="divider20"></view>
+<view class="row70">
+  <text class="center" bindtap="User_Quit">退出登陆</text>
+</view>

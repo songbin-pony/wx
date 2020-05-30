@@ -1,0 +1,14 @@
+<!--pages/login/login.wxml-->
+<view class="login_box">
+  <view class="itemView">用户名：
+    <input class="input" name="userName" placeholder="请输入用户名" bindinput="userNameInput" />
+  </view>
+  <view class="itemView">密 码：
+    <input class="input" password placeholder="请输入密码" bindinput="passWdInput" />
+  </view>
+</view>
+<view class="viewName" style="background-color:#fbf9fe">
+  <button class="loginBtn" bindtap="loginBtnClick">登录</button>
+  <button class="loginBtn" bindtap="register" >没有账号,点我注册</button>
+</view>
+<view>{{login_message}}</view>

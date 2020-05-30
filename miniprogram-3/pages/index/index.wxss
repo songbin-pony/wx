@@ -1,0 +1,18 @@
+/* 轮播栏 */
+.banner swiper{
+  height: 220rpx;
+}
+.banner image{
+  width: 100%;
+}
+
+.picker{
+  height: 100rpx;
+  background-color: #fbf9fe;
+  border: 1rpx solid #ccc;
+
+}
+.loginBtn{
+  margin-top: 50rpx;
+  background-color: #ffc0cb;
+}

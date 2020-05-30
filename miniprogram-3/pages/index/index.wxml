@@ -1,0 +1,35 @@
+<!-- 首页轮播图 -->
+<view class="banner">
+  <swiper indicator-dots="true" autoplay="true" interval="2500" duration="800">
+    <swiper-item>
+      <image src="../img/banner/1.jpg" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../img/banner/2.jpg" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../img/banner/3.jpg" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../img/banner/4.jpg" mode="widthFix"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 出发地目的地 -->
+<view class="index_box">
+  <view class="from_des">出发地：
+   <button bindtap="from_station_input">{{from_station}}</button>
+  </view>
+  <view class="to_des">目的地：
+    <button bindtap="to_station_input">{{to_station}}</button>
+  </view>
+  <view class="select_time__title">选择出发时间:</view>
+	<picker mode="date" value="{{date}}" start="2018-09-01" end="2021-09-01" bindchange="bindDateChange">
+		<view class="picker vertical-center">
+			当前选择: {{date}}
+		</view>
+	</picker>
+</view>
+<view class="viewName" style="background-color:#fbf9fe">
+  <button class="loginBtn" bindtap="loginBtnClick">搜索</button>
+</view>

@@ -1,0 +1,69 @@
+/**app.wxss**/
+/* 设置页面背景为aliceblue色 */
+page{
+  background-color: aliceblue;
+}
+/* 设置背景色为白色 */
+.bgw{
+  background-color: #fff;
+}
+/* 上边距为20rpx */
+.mt20{
+  margin-top: 20rpx;
+}
+/*上边距为10rpx */
+.mt10{
+  margin-top: 10rpx;
+}
+/* 高为10rpx的分隔栏 */
+.divider10{
+  height: 10rpx;
+  background-color:aliceblue;
+}
+/* 高为20rpx的分隔栏 */
+.divider20{
+  height: 20rpx;
+  background-color:aliceblue;
+}
+/* 细线竖直边框 */
+.bgr{
+  position: relative;
+}
+.bgr::after{
+  content: "";
+  width: 2rpx;
+  height: 100%;
+  background-color:aliceblue;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* 居中封装 */
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 居中封装 */
+.column_center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* 两端对齐封装 */
+.space-between{
+display: flex;
+justify-content: center;
+}
+/* 单行竖直居中封装 */
+.vertical-center{
+  display: flex;
+  align-items: center;
+}
+/* 普通横条封装 */
+.row70{
+  background-color: #fff;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}

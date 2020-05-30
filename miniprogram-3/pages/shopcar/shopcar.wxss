@@ -1,0 +1,74 @@
+/* pages/shopcar/shopcar.wxss */
+.header_fixed{
+  position: fixed;
+  top: 0rpx;
+  width: 100%;
+}
+.for_top_fixed{
+  height: 80rpx;
+}
+.shopcar_header {
+  display: flex;
+  height: 60rpx;
+  font-size: 16px;
+  background-color:white;
+  border-radius: 5%;
+  padding: 0 50rpx;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shopcar_info_box {
+  display: flex;
+  margin: 30rpx 0;
+  background-color: white;
+  border-radius: 5%;
+  padding: 20rpx;
+}
+
+.box_left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15rpx;
+}
+
+.box_right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15rpx;
+}
+.img_icon{
+  width: 30rpx;
+  padding-right: 10rpx;
+}
+.img_icon_vertical_center{
+  display: flex;
+  align-items: center;
+
+}
+.del_or_pay{
+  height: 90rpx;
+  width: 100%;
+  background-color:white;
+  position: fixed;
+  bottom: 0rpx;
+  display: flex;
+  padding: 0 20rpx;
+  justify-content:space-around;
+  align-items: center;
+  border-top: 1rpx solid gainsboro;
+  border-bottom: 2rpx solid gainsboro;
+}
+.select_all{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.jiesuan_del_img {
+  width: 160rpx;
+}
+.select_all_img{
+  width: 160rpx;
+}

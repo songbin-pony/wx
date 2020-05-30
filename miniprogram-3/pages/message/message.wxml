@@ -1,0 +1,13 @@
+<!-- pages/message/message.wxml-->
+<view class="province"wx:for="{{province_list}}" wx:for-item="item1">
+<view class="province_name">
+<button class="search_button_list" size="default" bindtap="scenery_name_button_list_Click" id="{{item1}}">
+{{item1}}
+</button>
+</view>
+<view wx:if="{{item1==province_selected}}" class="scenery_name_box">
+<view wx:for="{{scenery_name_after_selected}}" wx:for-item="item2"  class="municipal_scenery_name_box">
+<view class="municipal_scenery_name center" bindtap="scenery_name_detail_Click" id="{{item2}}">{{item2}}</view>
+</view>
+</view>
+</view>

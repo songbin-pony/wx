@@ -1,0 +1,14 @@
+<!--pages/register/register.wxml-->
+<view class="register_box">
+  <view class="itemView">用户名：
+    <input class="input" name="userName" placeholder="请输入用户名" bindinput="userNameInput" />
+  </view>
+  <view class="itemView">密 码：
+    <input class="input" password placeholder="请输入密码" bindinput="passWdInput_1" />
+    <input class="input" password placeholder="请再次输入密码" bindinput="passWdInput_2" />
+  </view>
+</view>
+<view class="viewName" style="background-color:#fbf9fe">
+  <button class="registerBtn" bindtap="registerBtnClick">注册</button>
+</view>
+<view>{{register_message}}</view>

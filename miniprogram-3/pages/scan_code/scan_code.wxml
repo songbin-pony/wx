@@ -1,0 +1,20 @@
+<!--pages/scan_code/scan_code.wxml-->
+<view class="box">
+  <view class="link">
+    <view class="link_action">
+      <view class="link_text_1 center">支付连接</view>
+      <view class="link_text_2 center" bindtap="cope_url"> 复制链接</view>
+    </view>
+    <view class="url">
+      <text>{{url}}</text>
+    </view>
+  </view>
+
+
+  <view class="code_space">
+    <view class="code_text">二维码（浏览器打开）</view>
+    <div class='center'>
+      <canvas class='canvas' style="width:{{qrcodeWidth}}px; height:{{qrcodeWidth}}px;" canvas-id='canvas' bindlongtap='save'></canvas>
+    </div>
+  </view>
+</view>

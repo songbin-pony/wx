@@ -1,0 +1,53 @@
+/* pages/train_info_detail/train_info_detail.wxss */
+
+.train_info_detail_header {
+  height: 60rpx;
+  font-size: 16px;
+  background-color: red;
+  border-radius: 5%;
+  margin: 10rpx 0;
+}
+
+.train_info_box {
+  display: flex;
+  margin: 30rpx 0;
+  background-color: red;
+  border-radius: 5%;
+  padding: 20rpx;
+}
+
+.box_left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15rpx;
+}
+
+.box_right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15rpx;
+}
+
+.train_info_btn {
+  background-color: red;
+  height: 80rpx;
+}
+
+.buy_num {
+  padding: 10rpx;
+  display: flex;
+  background-color: red;
+  border-radius: 5%;
+  margin: 30rpx 0;
+  height: 60rpx;
+}
+.buy_title_text{
+  width: 40%;
+  padding-left: 20rpx;
+}
+.img_add_sub{
+  width: 120rpx;
+  margin: 0 20rpx;
+}

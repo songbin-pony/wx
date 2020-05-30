@@ -1,0 +1,15 @@
+/* pages/message/message.wxss */
+.municipal_scenery_name_box{
+  width:50%;
+  padding: 5rpx;
+  box-sizing: border-box;
+
+}
+.scenery_name_box{
+  display: flex;
+  flex-wrap: wrap;
+}
+.municipal_scenery_name{
+  height: 50rpx;
+  background-color: #ccc;
+}

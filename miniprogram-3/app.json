@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/message/message",
+    "pages/shopcar/shopcar",
+    "pages/my/my",
+    "pages/login/login",
+    "pages/search/search",
+    "pages/train_list/train_list",
+    "pages/train_info_detail/train_info_detail",
+    "pages/register/register",
+    "pages/municipal_scenery_list/municipal_scenery_list",
+    "pages/unpaid/unpaid",
+    "pages/paid/paid",
+    "pages/scan_code/scan_code",
+    "pages/unrefund/unrefund",
+    "pages/refunded/refunded"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f1f1f1",
+    "navigationBarTitleText": "小桃淘行程",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#000"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "pages/img/meau/1.png",
+        "selectedIconPath": "pages/img/meau/1.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "景点",
+        "iconPath": "pages/img/meau/2.png",
+        "selectedIconPath": "pages/img/meau/2.png"
+      },
+      {
+        "pagePath": "pages/shopcar/shopcar",
+        "text": "购票车",
+        "iconPath": "pages/img/meau/3.png",
+        "selectedIconPath": "pages/img/meau/3.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "pages/img/meau/4.png",
+        "selectedIconPath": "pages/img/meau/4.png"
+      }
+    ],
+    "borderStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

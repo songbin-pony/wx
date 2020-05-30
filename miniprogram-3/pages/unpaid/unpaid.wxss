@@ -1,0 +1,41 @@
+/* pages/unpaid/unpaid.wxss */
+.order_box{
+  background-color: white;
+  padding: 10rpx 0;
+  margin: 20rpx 0;
+  border-radius: 5%;
+
+
+}
+.order_id{
+  display: flex;
+  padding: 10rpx 50rpx 0;
+  justify-content: space-around
+}
+.shopcar_info_box {
+  display: flex;
+  margin: 30rpx 0;
+  padding: 20rpx;
+  background-color: whitesmoke
+}
+.box_left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15rpx;
+}
+
+.box_right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15rpx;
+}
+.del_or_showcode{
+  display: flex;
+  justify-content: space-around;
+  padding: 0 50rpx;
+}
+.del_order_image{
+  width: 200rpx;
+}

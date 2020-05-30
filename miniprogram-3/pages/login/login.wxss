@@ -1,0 +1,4 @@
+/* pages/login/login.wxss */
+.login_box{
+  padding: 30rpx;
+}
